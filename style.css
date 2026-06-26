@@ -1,0 +1,249 @@
+/* General Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9fafb;
+    color: #374151;
+    line-height: 1.5;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #C31F33; /* SDG 4 Official Red */
+    color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-b: 1px solid #e5e7eb;
+}
+
+.hero-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.badge {
+    background-color: #C31F33;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+    color: #111827;
+}
+
+.hero p {
+    color: #4b5563;
+    margin-top: 0.5rem;
+}
+
+/* Layout Containers */
+.main-container {
+    max-width: 1050px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+/* Documentation Cards */
+.doc-section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 2rem;
+}
+
+.card {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+.card-red { background-color: #fef2f2; border-color: #fee2e2; color: #991b1b; }
+.card-green { background-color: #f0fdf4; border-color: #dcfce7; color: #166534; }
+.card-blue { background-color: #eff6ff; border-color: #dbeafe; color: #1e40af; }
+.card p { color: #374151; font-size: 0.9rem; margin-top: 0.5rem;}
+
+/* Resource Cards */
+.res-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.tag-blue { background: #eff6ff; color: #2563eb; }
+.tag-purple { background: #f3e8ff; color: #7c3aed; }
+.tag-green { background: #f0fdf4; color: #16a34a; }
+
+.res-card h4 { margin-top: 0.75rem; }
+.res-card p { font-size: 0.85rem; color: #6b7280; margin: 0.5rem 0; }
+
+.btn-download {
+    width: 100%;
+    background: #111827;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn-download:hover { background: #1f2937; }
+
+/* Forum Section */
+.forum-section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    margin-top: 2rem;
+}
+
+.subtitle { font-size: 0.85rem; color: #6b7280; margin-bottom: 1rem; }
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.btn-submit {
+    width: 100%;
+    background: #C31F33;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Feed list styles */
+.feed-list {
+    max-height: 320px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.feed-item {
+    background: #f9fafb;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 1rem;
+}
+
+.feed-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.feed-tag { background: #fef2f2; color: #c31f33; padding: 0.1rem 0.4rem; border-radius: 4px; }
+.feed-question { font-weight: 600; font-size: 0.9rem; margin-top: 0.25rem; }
+.feed-answer { background: #f0fdf4; border: 1px solid #dcfce7; color: #166534; padding: 0.5rem; font-size: 0.8rem; border-radius: 4px; margin-top: 0.5rem;}
+.status-waiting { background: #fffbeb; border: 1px solid #fef3c7; color: #92400e; padding: 0.5rem; font-size: 0.8rem; border-radius: 4px; margin-top: 0.5rem; }
+
+/* Footer */
+.footer {
+    background: #111827;
+    color: #9ca3af;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    font-size: 0.85rem;
+}
+.footer-scope { font-size: 0.75rem; margin-top: 0.25rem; }
+
+/* Mobile view responsiveness patch */
+@media (max-width: 600px) {
+    .nav-container { flex-direction: column; gap: 0.5rem; }
+    .grid-2 { grid-template-columns: 1fr; }
+}

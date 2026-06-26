@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduAccess Hub - SDG 4 Solution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">📖 EduAccess Hub</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About Project</a></li>
+                <li><a href="#resources">Free Resources</a></li>
+                <li><a href="#doubt-section">Ask a Doubt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-container">
+            <span class="badge">SDG Goal 4: Quality Education</span>
+            <h2>Empowering Every Student with Free Education</h2>
+            <p>A web solution designed to bridge the educational gap for rural and underprivileged students by providing free structured resources and doubt-solving support.</p>
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <section id="about" class="doc-section">
+            <h3 class="section-title">📋 Project Documentation</h3>
+            <div class="grid-3">
+                <div class="card card-red">
+                    <h4>1. Problem Statement</h4>
+                    <p>Desh ke rural aur economically weaker sections ke students ke paas quality study material aur proper guidance ki bhari kami hai, jisse dropout rates badhte hain.</p>
+                </div>
+                <div class="card card-green">
+                    <h4>2. Project Objective</h4>
+                    <p>Ek aisa open-source web application platform banana jo har bache ko bina kisi fees ke structured board-level notes aur peer mentorship connect de sake.</p>
+                </div>
+                <div class="card card-blue">
+                    <h4>3. Solution Description</h4>
+                    <p><strong>EduAccess Hub</strong> lightweight hai. Yeh responsive design ke sath free regional notes module aur ek real-time interactive doubt-solving forum offer karta hai.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="resources-section">
+            <h3 class="section-title">📚 Free Structured Resource Library</h3>
+            <div class="grid-3">
+                <div class="res-card">
+                    <span class="tag tag-blue">Class 10 (Board Exam)</span>
+                    <h4>Science & Maths Notes</h4>
+                    <p>Complete NCERT concepts explained in simple Hindi & English mix prose.</p>
+                    <button class="btn-download" onclick="downloadAlert('Class 10 PDF Bundle')">Download PDF Notes</button>
+                </div>
+                <div class="res-card">
+                    <span class="tag tag-purple">Class 12 (Board Exam)</span>
+                    <h4>Physics & Chemistry</h4>
+                    <p>Formula sheets, derivations, and last 5 years solved board question papers.</p>
+                    <button class="btn-download" onclick="downloadAlert('Class 12 Material')">Download Question Bank</button>
+                </div>
+                <div class="res-card">
+                    <span class="tag tag-green">General</span>
+                    <h4>Career & Exam Guide</h4>
+                    <p>Basic videos explaining how to manage time during board examinations.</p>
+                    <button class="btn-download" onclick="downloadAlert('Video Lectures')">Watch Video Lectures</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="doubt-section" class="forum-section">
+            <div class="grid-2">
+                <div class="form-container">
+                    <h3>Ask Your Academic Doubt</h3>
+                    <p class="subtitle">Senior students and volunteer teachers yahan aapke sawal ka jawab denge.</p>
+                    <form id="doubtForm">
+                        <div class="form-group">
+                            <label>Student Name</label>
+                            <input type="text" id="studentName" required placeholder="Apna naam likhein">
+                        </div>
+                        <div class="form-group">
+                            <label>Select Subject</label>
+                            <select id="subject">
+                                <option>Mathematics</option>
+                                <option>Physics</option>
+                                <option>Chemistry</option>
+                                <option>English Grammar</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Your Question / Doubt</label>
+                            <textarea id="questionText" rows="3" required placeholder="Apna sawal detail mein type karein..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Submit Doubt</button>
+                    </form>
+                </div>
+
+                <div class="feed-container">
+                    <h3>Live Doubt Forum Feed</h3>
+                    <div id="doubtFeed" class="feed-list">
+                        <div class="feed-item">
+                            <div class="feed-header">
+                                <span class="feed-user">Rahul Kumar (Class 10)</span>
+                                <span class="feed-tag">Physics</span>
+                            </div>
+                            <p class="feed-question">Total Internal Reflection ka board level formula aur definition kya hai?</p>
+                            <div class="feed-answer">
+                                <strong>Ans by Mentor:</strong> Rahul, jab light dense medium se rare medium me jati hai aur angle of incidence critical angle se bada hota hai... <strong>Formula: sin(C) = 1/n</strong>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p><strong>EduAccess Hub — SDG 4 Web Project</strong></p>
+        <p class="footer-scope">Future Scope: Offline PWA support & AI Chatbot integration.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
